@@ -11,7 +11,7 @@ export class InMemoryDataService implements InMemoryDbService {
   constructor() {
   }
 
-  createDb(reqInfo?: RequestInfo): {} | Observable<{}> | Promise<{}> {
+  createDb() {
     const heroes = [
       {id: 11, name: 'Mr. Nice'},
       {id: 12, name: 'Narco'},
