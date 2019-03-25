@@ -21,6 +21,7 @@ export class HeroService {
     private messageService: MessageService) {
   }
   private heroesUrl = `api/heroes`;
+
   getHeroes(): Observable<Hero[]> {
     return this.http.get<Hero[]>(this.heroesUrl).pipe(
       tap(_ => this.log('fetched heroes')),
